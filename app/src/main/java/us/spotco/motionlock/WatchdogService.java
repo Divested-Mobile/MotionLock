@@ -24,7 +24,7 @@ public class WatchdogService extends Service {
 
     private static int lockThreshholdFaceDown = 1;
     private static int lockCounterFaceDown = 0;
-    private static int lockThreshholdNoMovement = 2;
+    private static int lockThreshholdNoMovement = 3;
     private static int lockCounterNoMovement = 0;
 
     private static BroadcastReceiver mScreenStateReceiver;
@@ -79,15 +79,16 @@ public class WatchdogService extends Service {
     private static void lock(String reason, int lockCounter, int lockThreshhold) {
         if(!mKM.inKeyguardRestrictedInputMode()) {
             logAction("Considering on locking! Counter: " + lockCounter + ", Threshold: " + lockThreshhold + ", Reason: " + reason);
+
+            if ((SystemClock.elapsedRealtime() - lastLockTime) >= (45 * 1000)) {
+                resetLockCouinters();
+                logAction("Timed out lock counters!");
+            }
+
             if (lockCounter >= lockThreshhold) {
                 resetLockCouinters();
                 mDPM.lockNow();
                 logAction("Locking!");
-            }
-
-            if ((SystemClock.elapsedRealtime() - lastLockTime) >= (20 * 1000)) {
-                resetLockCouinters();
-                logAction("Timed out lock counters!");
             }
             lastLockTime = SystemClock.elapsedRealtime();
         } else {
@@ -101,6 +102,7 @@ public class WatchdogService extends Service {
     private static void setupLockGestures() {
         flipListener = new FlipDetector.FlipListener() {
             @Override public void onFaceUp() {
+                lockCounterFaceDown = 0;
             }
 
             @Override public void onFaceDown() {
