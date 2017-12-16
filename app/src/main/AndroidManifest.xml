@@ -44,7 +44,7 @@
         <service
             android:name=".WatchdogService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="false"/>
     </application>
 
 </manifest>
