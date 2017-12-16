@@ -6,7 +6,7 @@ android {
         applicationId "us.spotco.motionlock"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 3
+        versionCode 4
         versionName "1.0" }
     buildTypes {
         debug {
@@ -19,6 +19,7 @@ android {
             shrinkResources true
             minifyEnabled true
             useProguard true
+            zipAlignEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
