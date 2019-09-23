@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "us.spotco.motionlock"
         minSdkVersion 14
-        targetSdkVersion 27
-        versionCode 8
+        targetSdkVersion 29
+        versionCode 9
         versionName "1.1"
         resConfigs "en"
     }
@@ -28,7 +28,7 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.github.nisrulz:sensey:1.8.0'
 }
