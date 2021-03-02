@@ -9,3 +9,4 @@ Requires device admin for locking.
 Credits
 -------
 - Sensey, License: Apache 2.0, https://github.com/nisrulz/Sensey
+- Icons (Apache-2.0): Google/Android/AOSP
