@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
     defaultConfig {
         applicationId "us.spotco.motionlock"
         minSdkVersion 14
-        targetSdkVersion 29
-        versionCode 11
+        targetSdkVersion 30
+        versionCode 12
         versionName "1.1"
         resConfigs "en"
     }
