@@ -1,0 +1,1 @@
+Super alpha! Automatically keeps your device locked when it is face down or hasn't been moved. Only monitors sensors when necessary. Powered by Sensey library licensed under Apache-2.0. Requires device admin for locking.
