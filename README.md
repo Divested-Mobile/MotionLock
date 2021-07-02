@@ -14,3 +14,7 @@ Credits
 -------
 - Sensey, License: Apache 2.0, https://github.com/nisrulz/Sensey
 - Icons: Google/Android/AOSP, License: Apache 2.0, https://google.github.io/material-design-icons/
+
+Donate
+-------
+BTC: bc1qkjtp2k7cc4kuv8k9wjdlxkeuqczenrpv5mwasl
