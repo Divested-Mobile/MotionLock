@@ -1,37 +1,35 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     defaultConfig {
         applicationId "us.spotco.motionlock"
         minSdkVersion 14
-        targetSdkVersion 30
-        versionCode 15
+        targetSdkVersion 32
+        versionCode 16
         versionName "1.1"
-        resConfigs "en"
+        resConfigs 'en'
     }
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
             minifyEnabled true
             zipAlignEnabled true
-            useProguard false
         }
         release {
             shrinkResources true
             minifyEnabled true
             zipAlignEnabled true
-            useProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    lintOptions {
+    lint {
         abortOnError false
     }
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.github.nisrulz:sensey:1.8.0'
 }
