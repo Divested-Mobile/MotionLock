@@ -38,9 +38,9 @@ public class WatchdogService extends Service {
 
     private static long lastLockTime = SystemClock.elapsedRealtime();
 
-    private static int lockThreshholdFaceDown = 1;
+    private static final int lockThreshholdFaceDown = 1;
     private static int lockCounterFaceDown = 0;
-    private static int lockThreshholdNoMovement = 3;
+    private static final int lockThreshholdNoMovement = 3;
     private static int lockCounterNoMovement = 0;
 
     private static BroadcastReceiver mScreenStateReceiver;

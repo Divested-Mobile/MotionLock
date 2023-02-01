@@ -6,7 +6,7 @@ android {
         applicationId "us.spotco.motionlock"
         minSdkVersion 14
         targetSdkVersion 32
-        versionCode 17
+        versionCode 18
         versionName "1.1"
         resConfigs 'en'
     }
@@ -29,7 +29,5 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.github.nisrulz:sensey:1.8.0'
 }
