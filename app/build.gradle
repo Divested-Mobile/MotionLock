@@ -6,7 +6,7 @@ android {
         applicationId "us.spotco.motionlock"
         minSdkVersion 14
         targetSdkVersion 32
-        versionCode 19
+        versionCode 20
         versionName "1.1"
         resConfigs 'en'
     }
