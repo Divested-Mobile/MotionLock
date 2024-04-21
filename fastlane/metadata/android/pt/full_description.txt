@@ -1,0 +1,1 @@
+Super alpha! Automaticamente bloqueia seu dispositivo quando está virado para baixo, ou não quando não é movido. Monitora sensores somente quando necessário. Feito possível pela biblioteca Sensey, licenciada sob Apache-2.0. Requer ser administrador do dispositivo para o bloqueio.
