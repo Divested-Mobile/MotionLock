@@ -15,9 +15,18 @@ Requires device admin for locking.
 
 Credits
 -------
-- @lucasmz for Portuguese translations for Fastlane metadata.
 - Sensey, License: Apache 2.0, https://github.com/nisrulz/Sensey
 - Icons: Google/Android/AOSP, License: Apache 2.0, https://google.github.io/material-design-icons/
+
+Translations
+------------
+- Chinese (Simplified): Crit
+- Croatian: lukapiplica
+- German: thereisnoanderson
+- Japanese: honyaku
+- Portuguese (Brazil): lucasmz-dev
+- Spanish: gallegonovato
+- Ukrainian: Fqwe1
 
 Donate
 -------
