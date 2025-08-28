@@ -1,0 +1,5 @@
+Translation updates thanks to the following contributors:
+- Arabic: jonnysemon
+- Czech: Fjuro
+- Estonian: Priit Jõerüüt
+- Italian: Dark Space
